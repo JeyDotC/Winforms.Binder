@@ -42,12 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Binding.cs" />
-    <Compile Include="Bindings\BindingMethodExtensions.cs" />
+    <Compile Include="Bindings\BindingExtensions.cs" />
+    <Compile Include="Bindings\ControlBindingExtensions.cs" />
+    <Compile Include="Bindings\PropertyExtensions.cs" />
     <Compile Include="Bindings\TextControlBinding.cs" />
     <Compile Include="Converters.cs" />
     <Compile Include="IBinding.cs" />
     <Compile Include="Prop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
