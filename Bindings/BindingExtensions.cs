@@ -26,6 +26,9 @@ namespace Winforms.Binder.Bindings
                 ViewModelToControlConverter = viewModelToControlConverter
             };
 
+            binding.ControlProperty.ListenToPropertyChanged();
+            binding.ViewModelProperty.ListenToPropertyChanged();
+
             return binding;
         }
         
@@ -46,7 +49,7 @@ namespace Winforms.Binder.Bindings
             return binding;
         }
 
-        public static Binding<TViewModelData, TControlData> WithControlToViewModelConverter
+        public static Binding<TViewModelData, TControlData> WithViewModelToControlConverter
             <TViewModelData, TControlData>(
             this Binding<TViewModelData, TControlData> binding, 
             Converter<TViewModelData, TControlData> converter)

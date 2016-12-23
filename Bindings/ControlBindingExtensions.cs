@@ -27,8 +27,6 @@ namespace Winforms.Binder.Bindings
 
             control.TextChanged += (sender, args) => binding.UpdateViewModel();
 
-            binding.ViewModelProperty.ListenToPropertyChanged();
-
             return binding;
         }
 
